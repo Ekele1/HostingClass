@@ -1,0 +1,151 @@
+.Register-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1602906530215-1bf5f4925279?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dm90aW5nfGVufDB8fDB8fHww");
+}
+.Register-body{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.register{
+    width: 60%;
+    height: 15%;
+    color: black;
+    /* background-color: yellow; */
+}
+.ppp{
+    font-size: 12px;
+}
+.name{
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+    background-color: #acabf1;
+    /* font-weight: bold; */
+}
+.register-button{
+    width: 60%;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #4c49ec;
+}
+.register-button:hover{
+    background-color: #8987e4;
+}
+.register-button:active{
+    background-color: #6f6de4;
+}
+.error{
+    color: red;
+    font-size: medium;
+    font-weight: lighter;
+    margin-left: 50px;
+}
+.pass{
+    width: 100%;
+    height: 50%;
+    background-color: #acabf1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.name2x{
+    width: 95%;
+    height: 50%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    /* font-weight: bold; */
+}
+.errortype{
+    display: flex;
+}
+/* @media screen and (max-width: 1400px) {
+    .Register-body{
+        width: 80%;
+        height: 90%;
+    }
+    .register{
+        height: 15%;
+        width: 80%;
+    }
+    .errortype{
+        font-size: 30px;
+        display: flex;
+    }
+    .register-button{
+        width: 80%;
+    }
+    .error{
+        font-size: 25px;
+    }
+} */
+/* @media screen and (min-width: 1401px) and (max-width: 3000px) {
+    .errortype{
+        font-size: 30px;
+    }
+    .error{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Register-body{
+        height: 80%;
+    }
+    .error{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Register-body{
+        height: 80%;
+        gap: 20px;
+    }
+    .register{
+        height: 10%;
+        /* background-color: yellow; */
+    /* }
+    .errortype p{
+        font-size: 15px;
+    }
+    .error{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 15px;
+        height: 90%;
+    }
+    .name2x{
+        font-size: 15px;
+
+    }
+    .pass{
+        height: 70%;
+    }
+    .errortype{
+        display: flex;
+    }
+} */ 
