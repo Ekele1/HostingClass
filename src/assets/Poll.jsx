@@ -66,12 +66,14 @@ const Poll=()=>{
             .then((Response)=> {
                 setLink(Response.data.link)
                 localStorage.setItem("pollid", (Response.data.id))
-                console.log("response",Response)
+                // console.log("response",Response)
                 setShow(true)
                 setLoading(false)
             })
             .catch((error)=>{
-                console.log("error",error)
+                console.log("error",error.response.data.message)
+                setError({isError: true, type: "login", mssg: `${error.response.data.message}`})
+                // alert(error.response.data.message)
                 setLoading(false)
             })
         }
@@ -87,11 +89,9 @@ const Poll=()=>{
                 <div className="namepro"><i>Create anonymous polls for free</i></div>
             </div>
             <div className="createpoll">
-                <h1>Create Poll</h1>
-                <p>Complete bellow fields to create a poll</p>
+                <h1>Create a Poll</h1>
+                <p className='fields'>Complete bellow fields to create a poll</p>
                 <div className="question">
-                    
-
                     <div className="question1">
                         <div className='errpoll'><h3>Poll Question</h3> {error.isError && error.type === "poll-question"? <p>{error.mssg}</p>: null} </div>
                         <input type="text" id='main-question' value={pollQuestion} onChange={(e)=>setPollQuestion(e.target.value)}  placeholder="what's your favourite TV show?"/>
@@ -99,7 +99,7 @@ const Poll=()=>{
                 </div>
                 <div className='errpoll'>{error.isError && error.type === "option"? <p>{error.mssg}</p>: null}</div>
             </div>
-            
+            <div className='errpoll errpox'>{error.isError && error.type === "login"? <p>{error.mssg}<Link to="/login">login</Link></p>: null}</div>
             {
                 option.map((data,id)=>(
                 <div className="option" key={id}>
@@ -122,7 +122,7 @@ const Poll=()=>{
                         </div>
                         <div className="li1">
                             <h3>The link to your poll is</h3>
-                            <div><p>{link}</p></div>
+                            <input id='linkxx' value={link}/>
                         </div>
                         {/* <div className="li2">
                             <h3>The link to manage your poll is</h3>

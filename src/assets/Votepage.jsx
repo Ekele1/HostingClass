@@ -86,7 +86,7 @@ const Votepage=()=>{
             </div>
             <div className="second">
                 <div className='form'>
-                    <label className='label'><h3>Input your email to vote your choice</h3></label>
+                    <label className='label'><p>Input your email to vote your choice</p></label>
 
                     <div className='voteremail'>
                         <p>Email</p>
@@ -102,7 +102,7 @@ const Votepage=()=>{
                         error?<p className='error'>You have to provide an email</p>:null
                     }
                     <select name="vote" id="vote" onChange={(e)=>setMyoption(e.target.value)}>
-                        <option value="">Select your option</option>
+                        <option value="" id='option'  >Select your option</option>
                         {
                             response?.map((e,id)=>(
                                 <option id='option'  key={id} value={e.text}>{e.text}</option>

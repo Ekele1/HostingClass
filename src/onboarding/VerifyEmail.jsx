@@ -54,7 +54,7 @@ const VerifyEmail=()=>{
             <div className='passwordWrapper'>
                 <div className="passwordbody">
                     <div className="input1">
-                        <p>A four digit code was sent to your email, pls enter the code bellow</p>
+                        <p>A one time password was sent to your email, pls enter the code bellow</p>
                     </div>
                     <div className="input2">
                         <p>verification code</p>

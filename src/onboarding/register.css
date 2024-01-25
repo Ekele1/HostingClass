@@ -83,7 +83,7 @@
 .errortype{
     display: flex;
 }
-/* @media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .Register-body{
         width: 80%;
         height: 90%;
@@ -102,7 +102,7 @@
     .error{
         font-size: 25px;
     }
-} */
+}
 /* @media screen and (min-width: 1401px) and (max-width: 3000px) {
     .errortype{
         font-size: 30px;

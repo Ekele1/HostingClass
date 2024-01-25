@@ -35,7 +35,7 @@ const Login =()=>{
                 "https://curve-voting-app.onrender.com/login",
                  data
             );
-            console.log(res)
+            // console.log(res)
            const userToken =res.data.token
            localStorage.setItem("userToken",(userToken))
           

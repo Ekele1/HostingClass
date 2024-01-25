@@ -100,3 +100,32 @@
     outline: none;
     border-bottom: none;
 } */
+
+@media screen and (max-width: 1400px) {
+    .login-body{
+        width: 90%;
+        height: 90%;
+    }
+    .emailing{
+        height: 15%;
+        width: 90%;
+    }
+    .emailft{
+        width: 90%;
+        height: 15%;
+    }
+    .show{
+        font-size: 20px;
+    }
+    #passx{
+        width: 85%;
+    }
+    .login{
+        width: 90%;
+        height: 10%;
+        margin-top: 2%;
+    }
+    .error{
+        font-size: 15px;
+    }
+}

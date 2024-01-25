@@ -24,7 +24,7 @@ const VoteAcess =()=>{
 
             axios.post(url,userInput)
             .then(Response => {
-                console.log(Response)
+                // console.log(Response)
                 setSucess(true)
                 setError(false)
                 setTimeout(()=>{
@@ -32,7 +32,7 @@ const VoteAcess =()=>{
                 },[5000])
             })
             .catch(error => {
-                console.log(error.response.data.message)
+                // console.log(error.response.data.message)
                 setError(true)
                 setSucess(false)
                 setErrorMessage(error.response.data.message)
@@ -47,7 +47,7 @@ const VoteAcess =()=>{
                 <div className="text">
                     <h1>Enter the 4 digit code sent to your email to count your vote</h1>
                 </div>
-                <input type="text" className='verifybutton' value={otp} onChange={(e)=>setOtp(e.target.value)} placeholder='email'/>
+                <input type="text" className='verifybutton' value={otp} onChange={(e)=>setOtp(e.target.value)} placeholder='OTP'/>
                 {
                     error?<p style={{color: "red"}}>{errorMessage}</p>:null
                 }

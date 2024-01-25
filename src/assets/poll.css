@@ -223,3 +223,94 @@
     gap: 40px;
     /* border: 1px solid black; */
 }
+@media screen and (max-width: 1400px) {
+    .header{
+        width: 100%;
+        height: 200px;
+        /* background-color: yellow; */
+    }
+    .svg{
+        height: 80%;
+        width: 100%;
+        font-size: 10px;
+    }
+    .createpoll{
+        width: 90%;
+        /* padding-left: 10px; */
+    }
+    .fields{
+        width: 100%;
+    }
+    .question{
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    .option{
+        width: 90%;
+        height: 120px;
+        /* background-color: yellow; */
+    }
+    .option1{
+        width: 95%;
+        /* background-color: yellow; */
+    }
+    #options{
+        width: 100%;
+        height: 80%;
+    }
+    .delete{
+        width: 20%;
+        height: 70px;
+    }
+    .pollcreate{
+        width: 100%;
+        height: 150px;
+        /* background-color: yellow; */
+    }
+    #addpollbutton{
+        width: 90%;
+    }
+    .namepro{
+        font-size: 20px;
+        display: flex;
+        width: 100%;
+        height: 20%;
+    }
+    .register-button{
+        width: 80%;
+    }
+    .errpox{
+        width: 90%;
+        /* font-size: 25px; */
+        /* margin-left: 4%; */
+    }
+    .link{
+        width: 100%;
+        height: 700px;
+
+        /* background-color: #5454f5; */
+    }
+    .li1{
+        height: 20%;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    /* .li1 p{
+        width: 100%;
+        height: 90%;
+        background-color: red;
+    } */
+    #linkxx{
+        width: 100%;
+        height: 45%;
+        border: none;
+        color: white;
+        background-color: rgb(86, 86, 244);
+    }
+    /* #linkxx p{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    } */
+}
